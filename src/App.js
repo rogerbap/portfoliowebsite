@@ -2,7 +2,12 @@ import React, { useState } from 'react';
 import Navigation from './components/layout/Navigation';
 import Footer from './components/layout/Footer';
 import ThreeBackground from './components/ui/ThreeBackground';
-// import Projects from './components/sections/Projects';
+import Projects from './components/sections/Projects.js';
+import Proficiency from './components/sections/Proficiency.js';
+import { techStack } from './components/data/portfolioData.js';
+import About from './components/sections/About.js';
+import Hero from './components/sections/Hero.js';
+
 const App = () => {
   const [activeSection, setActiveSection] = useState('hero');
 
@@ -54,15 +59,15 @@ const App = () => {
     <div style={containerStyle}>
       {/* 3D Background */}
       <ThreeBackground />
-      
+
       {/* Navigation */}
       <Navigation activeSection={activeSection} setActiveSection={setActiveSection} />
-      
+
       {/* Main Content */}
       <main>
         {/* Hero Section */}
         <section id="hero" style={sectionStyle}>
-          <div style={{ maxWidth: '1000px', margin: '0 auto', position: 'relative', zIndex: 10 }}>
+          {/* <div style={{ maxWidth: '1000px', margin: '0 auto', position: 'relative', zIndex: 10 }}>
             <h1 style={titleStyle}>
               Roger Baptiste
             </h1>
@@ -70,7 +75,7 @@ const App = () => {
               Full Stack Developer & Technical Architect
             </p>
             <p style={descriptionStyle}>
-              I build scalable web applications and digital experiences using modern technologies. 
+              I build scalable web applications and digital experiences using modern technologies.
               Specializing in React, Node.js, and cloud architecture to create solutions that drive business growth.
             </p>
             <button style={{
@@ -86,12 +91,14 @@ const App = () => {
             }}>
               View My Work
             </button>
-          </div>
+          </div> */}
+          <Hero />
         </section>
 
         {/* About Section */}
         <section id="about" style={sectionStyle}>
-          <div style={{ maxWidth: '1200px', margin: '0 auto' }}>
+          <About />
+          {/* <div style={{ maxWidth: '1200px', margin: '0 auto' }}>
             <h2 style={{
               fontSize: 'clamp(2.5rem, 5vw, 3.5rem)',
               fontWeight: 'bold',
@@ -117,8 +124,8 @@ const App = () => {
                   lineHeight: '1.7',
                   marginBottom: '1.5rem'
                 }}>
-                  I'm a passionate full-stack developer with 5+ years of experience building scalable web applications 
-                  and leading technical teams. I specialize in modern JavaScript frameworks, cloud architecture, and 
+                  I'm a passionate full-stack developer with 5+ years of experience building scalable web applications
+                  and leading technical teams. I specialize in modern JavaScript frameworks, cloud architecture, and
                   creating seamless user experiences that drive business results.
                 </p>
                 <p style={{
@@ -126,7 +133,7 @@ const App = () => {
                   color: '#d1d5db',
                   lineHeight: '1.7'
                 }}>
-                  My expertise spans the entire development lifecycle - from crafting pixel-perfect frontends with 
+                  My expertise spans the entire development lifecycle - from crafting pixel-perfect frontends with
                   React and Next.js to architecting robust backend systems with Node.js and Python.
                 </p>
               </div>
@@ -146,7 +153,7 @@ const App = () => {
                 👨‍💻
               </div>
             </div>
-          </div>
+          </div> */}
         </section>
 
         {/* Skills Section Placeholder */}
@@ -175,24 +182,79 @@ const App = () => {
               gridTemplateColumns: 'repeat(auto-fit, minmax(200px, 1fr))',
               gap: '2rem'
             }}>
-              {['React.js', 'Node.js', 'TypeScript', 'Three.js', 'AWS', 'PostgreSQL'].map((tech, index) => (
-                <div key={index} style={{
-                  padding: '2rem',
-                  background: 'rgba(255, 255, 255, 0.1)',
-                  borderRadius: '1rem',
-                  border: '1px solid rgba(255, 255, 255, 0.2)',
-                  backdropFilter: 'blur(10px)'
-                }}>
-                  <h3 style={{ color: '#60a5fa', marginBottom: '0.5rem' }}>{tech}</h3>
-                  <p style={{ color: '#9ca3af', fontSize: '0.875rem' }}>Professional</p>
-                </div>
-              ))}
+              {techStack.map((tech, index) => {
+                const IconComponent = tech.icon;
+                return (
+                  <div key={index} style={{
+                    padding: '2rem',
+                    background: 'rgba(255, 255, 255, 0.1)',
+                    borderRadius: '1rem',
+                    border: '1px solid rgba(255, 255, 255, 0.2)',
+                    backdropFilter: 'blur(10px)',
+                    textAlign: 'left',
+                    transition: 'transform 0.3s ease, box-shadow 0.3s ease'
+                  }}>
+                    <div style={{
+                      display: 'flex',
+                      alignItems: 'center',
+                      marginBottom: '1rem'
+                    }}>
+                      <IconComponent
+                        size={32}
+                        style={{
+                          color: '#60a5fa',
+                          marginRight: '1rem'
+                        }}
+                      />
+                      <h3 style={{
+                        color: '#60a5fa',
+                        margin: 0,
+                        fontSize: '1.25rem',
+                        fontWeight: '600'
+                      }}>
+                        {tech.title}
+                      </h3>
+                    </div>
+                    <p style={{
+                      color: '#d1d5db',
+                      fontSize: '0.875rem',
+                      marginBottom: '1rem',
+                      lineHeight: '1.4'
+                    }}>
+                      {tech.description}
+                    </p>
+                    <div style={{
+                      display: 'flex',
+                      flexWrap: 'wrap',
+                      gap: '0.5rem'
+                    }}>
+                      {tech.skills.map((skill, skillIndex) => (
+                        <span key={skillIndex} style={{
+                          background: 'rgba(96, 165, 250, 0.2)',
+                          color: '#60a5fa',
+                          padding: '0.25rem 0.75rem',
+                          borderRadius: '1rem',
+                          fontSize: '0.75rem',
+                          fontWeight: '500',
+                          border: '1px solid rgba(96, 165, 250, 0.3)'
+                        }}>
+                          {skill}
+                        </span>
+                      ))}
+                    </div>
+                  </div>
+                );
+              })}
             </div>
           </div>
         </section>
-<section id="proficiency" style={sectionStyle}></section>
-<section id="projects" style={sectionStyle}></section>
-        {/* <Projects /> */}
+        <section id="proficiency" style={sectionStyle}>
+          <Proficiency />
+          {/* <Proficiency/> */}
+        </section>
+        <section id="projects" style={sectionStyle}>
+          <Projects />
+        </section>
         {/* Contact Section */}
         <section id="contact" style={sectionStyle}>
           <div style={{ maxWidth: '1000px', margin: '0 auto', textAlign: 'center' }}>
@@ -230,9 +292,8 @@ const App = () => {
           </div>
         </section>
       </main>
-      
+
       {/* Footer */}
-      
       <Footer />
     </div>
   );

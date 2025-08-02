@@ -27,9 +27,6 @@ const TechCard = ({ tech }) => {
       justifyContent: 'center',
       marginRight: '1rem'
     },
-    content: {
-      flex: 1
-    },
     title: {
       fontSize: '1.25rem',
       fontWeight: 'bold',
@@ -61,9 +58,9 @@ const TechCard = ({ tech }) => {
     <div style={styles.card}>
       <div style={styles.header}>
         <div style={styles.iconContainer}>
-          <Icon size={24} color="white" />
+          <Icon size={24} />
         </div>
-        <div style={styles.content}>
+        <div>
           <h3 style={styles.title}>{tech.title}</h3>
           <p style={styles.description}>{tech.description}</p>
         </div>

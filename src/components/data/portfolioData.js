@@ -1,4 +1,5 @@
 import { Code, Database, Cloud, Smartphone, Server, Monitor } from 'lucide-react';
+import React from 'react';
 
 export const sections = [
   { id: 'hero', title: 'Home' },
@@ -45,7 +46,8 @@ export const techStack = [
     title: 'Tools & Workflow', 
     description: 'Professional development environment',
     skills: ['Git', 'VS Code', 'Figma', 'Postman', 'Jira', 'Linear'] 
-  }
+  },
+  
 ];
 
 export const proficiencyData = [
