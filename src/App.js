@@ -23,7 +23,7 @@ const App = () => {
   const sectionStyle = {
     position: 'relative',
     minHeight: '100vh',
-    // display: 'flex',
+    // display: 'flex',    //Removed in order to allow stacked rows and block flow
     alignItems: 'center',
     justifyContent: 'center',
     textAlign: 'center',
@@ -76,26 +76,26 @@ const App = () => {
           <About />
         </section>
 
-        {/* Skills Section Placeholder */}
-         <section id="skills" style={sectionStyle}>
+        {/* Skills Section */}
+        <section id="skills" style={sectionStyle}>
           <TechStack />
         </section>
+
         <section id="proficiency" style={sectionStyle}>
           <Proficiency />
-          {/* <Proficiency/> */}
         </section>
+
         <section id="projects" style={sectionStyle}>
           <Projects />
         </section>
+
         {/* Contact Section */}
-         <section id="contact" style={sectionStyle}>
+        <section id="contact" style={sectionStyle}>
           <Contact />
-          {/* <Proficiency/> */}
         </section>
       </main>
 
       {/* Footer */}
-      {/* <TechStack /> */}
       <Footer />
     </div>
   );

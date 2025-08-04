@@ -109,7 +109,7 @@ const Hero = () => {
             <ChevronDown size={20} />
           </button>
           <div style={styles.socialLinks}>
-            <a href="https://github.com/rogerb" style={styles.socialLink}>
+            <a href="https://github.com/rogerbap" style={styles.socialLink}>
               <Github size={24} />
             </a>
             <a href="https://linkedin.com/in/rogerbaptiste" style={styles.socialLink}>

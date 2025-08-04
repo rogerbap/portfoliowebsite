@@ -11,43 +11,43 @@ export const sections = [
 ];
 
 export const techStack = [
-  { 
-    icon: Code, 
-    title: 'Frontend Development', 
+  {
+    icon: Code,
+    title: 'Frontend Development',
     description: 'Modern, responsive user interfaces',
-    skills: ['React.js', 'Next.js', 'TypeScript', 'CSS3', 'Three.js', 'Vue.js'] 
+    skills: ['React.js', 'Next.js', 'TypeScript', 'CSS3', 'Three.js', 'Vue.js']
   },
-  { 
-    icon: Server, 
-    title: 'Backend Development', 
+  {
+    icon: Server,
+    title: 'Backend Development',
     description: 'Scalable server-side architecture',
-    skills: ['Node.js', 'Python', 'Express.js', 'FastAPI', 'GraphQL', 'REST APIs'] 
+    skills: ['C#','Node.js', 'Python', 'Express.js', 'PHP', 'GraphQL', 'REST APIs']
   },
-  { 
-    icon: Database, 
-    title: 'Database & Storage', 
+  {
+    icon: Database,
+    title: 'Database & Storage',
     description: 'Efficient data management solutions',
-    skills: ['PostgreSQL', 'MongoDB', 'Redis', 'Prisma', 'Supabase', 'Firebase'] 
+    skills: ['PostgreSQL', 'MongoDB', 'Redis', 'MySQL', 'MSSQL', 'NoSQL', 'AzureCosmosDB']
   },
-  { 
-    icon: Cloud, 
-    title: 'Cloud & DevOps', 
+  {
+    icon: Cloud,
+    title: 'Cloud & DevOps',
     description: 'Modern deployment and infrastructure',
-    skills: ['AWS', 'Vercel', 'Docker', 'GitHub Actions', 'Terraform', 'Kubernetes'] 
+    skills: ['AWS', 'Vercel', 'Docker', 'GitHub Actions', 'Terraform', 'Kubernetes']
   },
-  { 
-    icon: Smartphone, 
-    title: 'Mobile Development', 
+  {
+    icon: Smartphone,
+    title: 'Mobile Development',
     description: 'Cross-platform mobile solutions',
-    skills: ['React Native', 'Expo', 'Flutter', 'PWA', 'Ionic', 'Capacitor'] 
+    skills: ['React Native', 'Expo', 'Flutter', 'PWA', 'Ionic', 'Capacitor']
   },
-  { 
-    icon: Monitor, 
-    title: 'Tools & Workflow', 
+  {
+    icon: Monitor,
+    title: 'Tools & Workflow',
     description: 'Professional development environment',
-    skills: ['Git', 'VS Code', 'Figma', 'Postman', 'Jira', 'Linear'] 
+    skills: ['Git','Bash','PowerShell', 'VS Code', 'Figma', 'Postman', 'Jira', 'ServiceNow']
   },
-  
+
 ];
 
 export const proficiencyData = [
@@ -55,16 +55,19 @@ export const proficiencyData = [
   { name: 'TypeScript', level: 90, category: 'frontend', hot: true },
   { name: 'React.js', level: 95, category: 'frontend', hot: true },
   { name: 'Next.js', level: 88, category: 'frontend', hot: true },
-  { name: 'Vue.js', level: 82, category: 'frontend' },
-  { name: 'HTML5/CSS3', level: 98, category: 'frontend' },
+  { name: 'Vue.js', level: 82, category: 'frontend', hot: true },
+  { name: 'HTML5/CSS3', level: 98, category: 'frontend', hot: true },
   { name: 'SCSS/Tailwind', level: 92, category: 'frontend', hot: true },
   { name: 'Three.js', level: 78, category: 'frontend', hot: true },
   { name: 'Node.js', level: 90, category: 'backend', hot: true },
-  { name: 'Python', level: 85, category: 'backend', hot: true },
+  { name: 'C#', level: 83, category: 'backend', hot: true },
+  { name: 'Python', level: 91, category: 'backend', hot: true },
+  { name: 'PHP', level: 89, category: 'backend', hot: true },
   { name: 'PostgreSQL', level: 85, category: 'database', hot: true },
-  { name: 'MongoDB', level: 82, category: 'database' },
+  { name: 'MongoDB', level: 82, category: 'database', hot: true },
   { name: 'AWS', level: 80, category: 'cloud', hot: true },
-  { name: 'Docker', level: 78, category: 'cloud', hot: true }
+  { name: 'Docker', level: 83, category: 'cloud', hot: true },
+  { name: 'Kubernetes', level: 79, category: 'cloud', hot: true },
 ];
 
 export const projects = [
