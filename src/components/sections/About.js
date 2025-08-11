@@ -83,23 +83,31 @@ const About = () => {
         <div style={styles.grid}>
           <div>
             <p style={styles.textLarge}>
-              I'm a passionate full-stack developer with 5+ years of experience building scalable web applications 
-              and leading technical teams. I specialize in modern JavaScript frameworks, cloud architecture, and 
-              creating seamless user experiences that drive business results.
+              I'm a senior software engineer with 7+ years of progressive experience spanning full-stack
+              development, cybersecurity, and technical leadership. Currently serving as Senior Engineer
+              and Technical Architect at NBH Bank, where I design enterprise-level applications with a
+              focus on security, compliance, and scalability.
             </p>
             <p style={styles.textLarge}>
-              My expertise spans the entire development lifecycle - from crafting pixel-perfect frontends with 
-              React and Next.js to architecting robust backend systems with Node.js and Python. I'm passionate 
-              about clean code, performance optimization, and staying at the forefront of web technology.
+              My journey began at a startup where I rapidly advanced from Junior Developer to Lead Developer,
+              building and mentoring a team of 6+ engineers. I then transitioned to cybersecurity and risk
+              management before returning to development with a security-first mindset. I excel at API
+              integrations, cloud architecture (Azure, AWS), and creating robust systems that meet strict
+              regulatory requirements.
             </p>
+            
             <div style={styles.statsGrid}>
-              <div style={styles.statCard}>
-                <div style={styles.statNumber}>50+</div>
-                <div style={styles.statLabel}>Projects Completed</div>
+              <div style={{ ...styles.statCard }}>
+                <div style={{ ...styles.statNumber, color: '#a78bfa' }}>7+</div>
+                <div style={styles.statLabel}>Years Experience</div>
               </div>
               <div style={{ ...styles.statCard }}>
-                <div style={{ ...styles.statNumber, color: '#a78bfa' }}>5+</div>
-                <div style={styles.statLabel}>Years Experience</div>
+                <div style={{ ...styles.statNumber, color: '#a78bfa' }}>6+</div>
+                <div style={styles.statLabel}>Team Members Led</div>
+              </div>
+              <div style={{ ...styles.statCard }}>
+                <div style={{ ...styles.statNumber, color: '#a78bfa' }}>50+</div>
+                <div style={styles.statLabel}>Projects Completed</div>
               </div>
             </div>
           </div>

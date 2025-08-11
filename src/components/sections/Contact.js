@@ -93,7 +93,9 @@ const Contact = () => {
           Let's Build Something Great
         </h2>
         <p style={styles.description}>
-          Ready to bring your next project to life? I'm available for full-time opportunities and freelance projects.
+          
+          📍 Based in Kansas City, MO • Available for remote and on-site opportunities
+        
         </p>
 
         <div style={styles.contactGrid}>

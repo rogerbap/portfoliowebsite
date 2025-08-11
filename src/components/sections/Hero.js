@@ -95,11 +95,12 @@ const Hero = () => {
             Roger Baptiste
           </h1>
           <p style={styles.subtitle}>
-            Full Stack Developer & Technical Architect
+            Senior Software Engineer & Technical Architect
           </p>
           <p style={styles.description}>
-            I build scalable web applications and digital experiences using modern technologies. 
-            Specializing in React, Node.js, and cloud architecture to create solutions that drive business growth.
+            I build secure, scalable enterprise applications with expertise in full-stack development, 
+  cybersecurity, and cloud architecture. Specializing in API integrations, system architecture, 
+  and leading technical teams to deliver mission-critical solutions.
           </p>
         </div>
         
