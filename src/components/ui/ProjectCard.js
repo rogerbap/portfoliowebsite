@@ -2,6 +2,22 @@ import React from 'react';
 import { Github, ExternalLink, Star } from 'lucide-react';
 
 const ProjectCard = ({ project }) => {
+  const handleLiveDemo = () => {
+    if (project.liveUrl) {
+      window.open(project.liveUrl, '_blank');
+    } else {
+      alert('Live demo coming soon!');
+    }
+  };
+
+  const handleViewCode = () => {
+    if (project.codeUrl) {
+      window.open(project.codeUrl, '_blank');
+    } else {
+      alert('Code repository is private or coming soon!');
+    }
+  };
+
   const styles = {
     card: {
       position: 'relative',
@@ -89,6 +105,10 @@ const ProjectCard = ({ project }) => {
     secondaryButton: {
       background: 'rgba(255, 255, 255, 0.1)',
       border: '1px solid rgba(255, 255, 255, 0.2)'
+    },
+    disabledButton: {
+      opacity: 0.6,
+      cursor: 'not-allowed'
     }
   };
 
@@ -120,11 +140,24 @@ const ProjectCard = ({ project }) => {
           ))}
         </div>
         <div style={styles.buttonGroup}>
-          <button style={styles.button}>
+          <button 
+            style={{
+              ...styles.button,
+              ...((!project.liveUrl) ? styles.disabledButton : {})
+            }}
+            onClick={handleLiveDemo}
+          >
             <ExternalLink size={16} />
             Live Demo
           </button>
-          <button style={{...styles.button, ...styles.secondaryButton}}>
+          <button 
+            style={{
+              ...styles.button, 
+              ...styles.secondaryButton,
+              ...((!project.codeUrl) ? styles.disabledButton : {})
+            }}
+            onClick={handleViewCode}
+          >
             <Github size={16} />
             Code
           </button>

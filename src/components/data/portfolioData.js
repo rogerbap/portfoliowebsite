@@ -1,4 +1,4 @@
-import { Code, Database, Cloud, Smartphone, Server, Monitor } from 'lucide-react';
+import { Code, Database, Cloud, Smartphone, Server, Monitor, ExternalLink } from 'lucide-react';
 import React from 'react';
 
 export const sections = [
@@ -21,7 +21,7 @@ export const techStack = [
     icon: Server,
     title: 'Backend Development',
     description: 'Scalable server-side architecture',
-    skills: ['C#','Node.js', 'Python', 'Express.js', 'PHP', 'GraphQL', 'REST APIs']
+    skills: ['C#', 'Node.js', 'Python', 'Express.js', 'PHP', 'GraphQL', 'REST APIs']
   },
   {
     icon: Database,
@@ -45,7 +45,7 @@ export const techStack = [
     icon: Monitor,
     title: 'Tools & Workflow',
     description: 'Professional development environment',
-    skills: ['Git','Bash','PowerShell', 'VS Code', 'Figma', 'Postman', 'Jira', 'ServiceNow']
+    skills: ['Git', 'Bash', 'PowerShell', 'VS Code', 'Figma', 'Postman', 'Jira', 'ServiceNow']
   },
 
 ];
@@ -71,6 +71,16 @@ export const proficiencyData = [
 ];
 
 export const projects = [
+  {
+    title: 'Healthcare API Integration Dashboard',
+    description: "Enterprise healthcare interoperability platform demonstrating FHIR R4 and HL7 v2.x integration with Epic, Cerner, and Azure Health Data Services. Features real-time API monitoring, patient resource validation, and HL7 message transformation with HIPAA-compliant architecture.",
+    tech: ['Python', 'Flask', 'JavaScript', 'Chart.js', 'FHIR R4', 'HL7 v2.x', 'Docker', 'Azure', 'OAuth 2.0'],
+    category: 'fullstack',
+    image: "assets/healthcareapidashboard.png",
+    featured: true,
+    liveUrl: 'https://healthcare-api-integration.onrender.com/',
+    codeUrl: 'https://github.com/rogerbap/healthcare-api-integration/blob/main/README.md'
+  },
   {
     title: 'AI-Powered E-commerce Platform',
     description: 'Full-stack e-commerce solution with AI recommendations, real-time chat, and advanced analytics dashboard.',
