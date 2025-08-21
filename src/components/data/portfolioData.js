@@ -82,6 +82,16 @@ export const projects = [
     codeUrl: 'https://github.com/rogerbap/healthcare-api-integration/blob/main/README.md'
   },
   {
+    title: 'Secure Patient Portal with Risk Assessment',
+    description: "Enterprise healthcare security platform demonstrating advanced authentication, real-time risk assessment, and role-based access control. Features behavioral analytics, geographic threat detection, device fingerprinting, and HIPAA-compliant audit logging with JWT authentication and session management.",
+    tech: ['Node.js', 'Express.js', 'PostgreSQL', 'JWT', 'Sequelize', 'bcrypt', 'JavaScript', 'CSS3'],
+    category: 'fullstack',
+    image: "assets/healthcare-patient-portal.png",
+    featured: true,
+    liveUrl: 'https://secure-patient-portal.onrender.com/',
+    codeUrl: 'https://github.com/rogerbap/secure-patient-portal/blob/main/README.md'
+  },
+  {
     title: 'AI-Powered E-commerce Platform',
     description: 'Full-stack e-commerce solution with AI recommendations, real-time chat, and advanced analytics dashboard.',
     tech: ['Next.js', 'Node.js', 'PostgreSQL', 'OpenAI API', 'Stripe', 'Socket.io'],
