@@ -92,15 +92,25 @@ export const projects = [
     codeUrl: 'https://github.com/rogerbap/secure-patient-portal/blob/main/README.md'
   },
   {
-  title: 'Deploy the Cat - Real-time CI/CD Game',
-  description: "Interactive real-time game demonstrating CI/CD pipeline concepts with WebSocket communication. Players race to deploy their pipeline before a mischievous cat sabotages components. Features drag-and-drop interface, progressive difficulty scaling, emergency fix mechanics, real-time deployment simulation, and microservices architecture with separate frontend/backend deployment.",
-  tech: ['React', 'TypeScript', 'Node.js', 'Socket.IO', 'Express.js', 'Vite', 'CSS3', 'WebSocket', 'Railway', 'Vercel'],
-  category: 'fullstack',
-  image: "assets/deploy-the-cat.png", 
-  featured: true,
-  liveUrl: 'https://deploy-the-cat.vercel.app/',
-  codeUrl: 'https://github.com/rogerbap/deploy-the-cat/blob/main/client/README.md'
-},
+    title: 'Deploy the Cat - Real-time CI/CD Game',
+    description: "Interactive real-time game demonstrating CI/CD pipeline concepts with WebSocket communication. Players race to deploy their pipeline before a mischievous cat sabotages components. Features drag-and-drop interface, progressive difficulty scaling, emergency fix mechanics, real-time deployment simulation, and microservices architecture with separate frontend/backend deployment.",
+    tech: ['React', 'TypeScript', 'Node.js', 'Socket.IO', 'Express.js', 'Vite', 'CSS3', 'WebSocket', 'Railway', 'Vercel'],
+    category: 'fullstack',
+    image: "assets/deploy-the-cat.png",
+    featured: true,
+    liveUrl: 'https://deploy-the-cat.vercel.app/',
+    codeUrl: 'https://github.com/rogerbap/deploy-the-cat/blob/main/client/README.md'
+  },
+  {
+    title: 'CodeQuest - Interactive Code Debugging Game',
+    description: "Full-stack educational game platform where developers practice debugging skills through interactive coding challenges. Features two game modes: Career Mode with progressive learning paths and Quick Fire Mode with time-based challenges. Includes user authentication, progress tracking, achievement systems, real-time code execution with safety validation, and comprehensive leaderboards. Built with secure JWT authentication and MongoDB Atlas for persistent user data.",
+    tech: ['React', 'Node.js', 'Express.js', 'MongoDB', 'Mongoose', 'JWT', 'Tailwind CSS', 'Axios', 'bcryptjs', 'Lucide React', 'Express Validator'],
+    category: 'fullstack',
+    image: 'assets/codequest.png',
+    featured: true,
+    liveUrl: 'https://codequestgame.vercel.app/',
+    codeUrl: 'https://github.com/rogerbap/codequest'
+  },
   {
     title: 'AI-Powered E-commerce Platform',
     description: 'Full-stack e-commerce solution with AI recommendations, real-time chat, and advanced analytics dashboard.',
