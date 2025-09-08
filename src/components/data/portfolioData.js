@@ -71,6 +71,16 @@ export const proficiencyData = [
 ];
 
 export const projects = [
+   {
+    title: 'React Task Management Dashboard',
+    description: "Modern task management application built with React 18 and Tailwind CSS, featuring complete CRUD operations, advanced filtering, and WCAG 2.1 accessibility compliance. Demonstrates component-based architecture, custom hooks, and responsive design patterns with industry-standard development practices.",
+    tech: ['React 18', 'JavaScript (ES6+)', 'Tailwind CSS', 'Vite', 'Lucide React', 'Custom Hooks', 'LocalStorage', 'WCAG'],
+    category: 'frontend',
+    image: "assets/TaskManagerDashboard.png",
+    featured: false,
+    liveUrl: 'https://react-taskdashboard.netlify.app/',
+    codeUrl: 'https://github.com/rogerbap/react-taskdashboard/blob/master/README.md'
+  },
   {
     title: 'Healthcare API Integration Dashboard',
     description: "Enterprise healthcare interoperability platform demonstrating FHIR R4 and HL7 v2.x integration with Epic, Cerner, and Azure Health Data Services. Features real-time API monitoring, patient resource validation, and HL7 message transformation with HIPAA-compliant architecture.",
