@@ -88,22 +88,22 @@ const Hero = () => {
   };
 
   return (
-    <section id ="hero" style={styles.section}>
+    <section id="hero" style={styles.section}>
       <div style={styles.container}>
         <div>
           <h1 style={styles.title}>
             Roger Baptiste
           </h1>
           <p style={styles.subtitle}>
-            Senior Software Engineer & Technical Architect
+            Software Engineer & Technical Architect
           </p>
           <p style={styles.description}>
-            I build secure, scalable enterprise applications with expertise in full-stack development, 
-  cybersecurity, and cloud architecture. Specializing in API integrations, system architecture, 
-  and leading technical teams to deliver mission-critical solutions.
+            I build secure, scalable enterprise applications with expertise in full-stack development,
+            cybersecurity, and cloud architecture. Specializing in API integrations, system architecture,
+            and leading technical teams to deliver mission-critical solutions.
           </p>
         </div>
-        
+
         <div style={styles.buttonGroup}>
           <button style={styles.primaryButton}>
             View My Work
@@ -122,7 +122,7 @@ const Hero = () => {
           </div>
         </div>
       </div>
-      
+
       <div style={styles.bounceAnimation}>
         <ChevronDown size={32} color="#9ca3af" />
       </div>
