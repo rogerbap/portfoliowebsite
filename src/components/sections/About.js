@@ -83,17 +83,12 @@ const About = () => {
         <div style={styles.grid}>
           <div>
             <p style={styles.textLarge}>
-              I'm a senior software engineer with 7+ years of progressive experience spanning full-stack
-              development, cybersecurity, and technical leadership. Currently serving as Senior Engineer
-              and Technical Architect at NBH Bank, where I design enterprise-level applications with a
-              focus on security, compliance, and scalability.
+              I'm a full-stack developer with 7+ years of experience combining enterprise application development with cybersecurity expertise. Currently a Cybersecurity Analyst at NBH Bank, I focus on building secure, efficient applications and improving system performance. 
             </p>
             <p style={styles.textLarge}>
-              My journey began at a startup where I rapidly advanced from Junior Developer to Lead Developer,
-              building and mentoring a team of 6+ engineers. I then transitioned to cybersecurity and risk
-              management before returning to development with a security-first mindset. I excel at API
-              integrations, cloud architecture (Azure, AWS), and creating robust systems that meet strict
-              regulatory requirements.
+               My journey started at Facility Ally, where I rapidly advanced from Junior to Full-Stack Developer, building core business applications with PHP Laravel and JavaScript. I optimized database performance, worked with payment systems, and helped streamline client reporting processes.
+I then expanded into cybersecurity at NBH Bank, where I work on security monitoring systems and help improve operational efficiency. This combination of development and security experience gives me a unique perspective on building applications that are both performant and secure.
+I enjoy solving technical challenges – whether it's optimizing database queries, improving application performance, or working with different systems and technologies. I believe the best solutions combine solid engineering principles with practical business value. 
             </p>
             
             <div style={styles.statsGrid}>
