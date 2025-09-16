@@ -83,7 +83,7 @@ const About = () => {
         <div style={styles.grid}>
           <div>
             <p style={styles.textLarge}>
-              I'm a full-stack developer with 7+ years of experience combining enterprise application development with cybersecurity expertise. Currently a Cybersecurity Analyst at NBH Bank, I focus on building secure, efficient applications and improving system performance. 
+              I'm a full-stack developer with 6+ years of experience combining enterprise application development with cybersecurity expertise. Currently a Cybersecurity Analyst at NBH Bank, I focus on building secure, efficient applications and improving system performance. 
             </p>
             <p style={styles.textLarge}>
                My journey started at Facility Ally, where I rapidly advanced from Junior to Full-Stack Developer, building core business applications with PHP Laravel and JavaScript. I optimized database performance, worked with payment systems, and helped streamline client reporting processes.
